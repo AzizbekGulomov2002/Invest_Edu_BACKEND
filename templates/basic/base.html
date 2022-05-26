@@ -1,0 +1,261 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Invest Education</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords"
+		content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+	<link rel="icon" href="{% static 'images/logo.jpg' %}" type="image/icon type">
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<!-- Pricing -->
+	<link rel="stylesheet" href="{% static 'css/pricing.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+	<style>
+		@media only screen and (max-width: 600px) {
+
+			.slider-text-inner {
+				padding: 10px 10px !important;
+			}
+		}
+	</style>
+
+
+	<style>
+		nav {
+			overflow: hidden !important;
+		}
+
+		.fh5co-nav {
+			overflow: hidden !important;
+			position: fixed !important;
+			top: 0 !important;
+			width: 100% !important;
+		}
+	</style>
+	<!-- Responsive uchun asosiy muammo nuqtalari -->
+	<div id="page">
+		<nav style="background-color: blue!important;" class="fh5co-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="fh5co-logo"><a href="index.html"><img src="{% static 'images/logo.jpg' %}"
+										class="logo">&nbsp;&nbsp;<a href="" style="color: white;">Invest Education</a>
+							</div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="/"><b><span style="color: white;">Bosh
+												sahifa</span></b></a></li>
+								<li><a href="{% url 'kurs' %}"><b><span style="color: white;">Kurslar</span></b></a></li>
+								<li><a href="{% url 'ustoz'  %}"><b><span style="color: white;">O'qituvchilar</span></b></a>
+								</li>
+								<li><a href="{% url 'about'  %}"><b><span style="color: white;">Biz haqimizda</span></b></a>
+								</li>
+								<li><a href="{% url 'narx' %}"><b><span style="color: white;">Kurs narxlari</span></b></a>
+								</li>
+								<li><a href="{% url 'yangilik' %}"><b><span style="color: white;">Yangiliklar</span></b></a></li>
+
+								<li><a href="{% url 'contact'  %}"><b><span style="color: white;">Bog'lanish</span></b></a></li>
+
+								<li><a href="/admin"><b><span style="color: white;">Admin</span></b></a></li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+{% block content %}
+
+
+
+{% endblock %}
+
+
+
+
+		<footer id="fh5co-footer" role="contentinfo" style="background-image: url({% static 'images/img_bg_4.jpg' %})">
+
+
+
+
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196633.15340757958!2d66.82780084892711!3d39.64086861590795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d191960077df7%3A0x487636d9d13f2f57!2z0KHQsNC80LDRgNC60LDQvdC0LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1652533526080!5m2!1sru!2s"
+				width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+
+
+
+
+
+	</div>
+	</footer>
+
+	<footer id="fh5co-footer" role="contentinfo" style="background-image: url({% static 'images/img_bg_4.jpg' %})">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-3 fh5co-widget">
+					<h3><span style="color: yellow;">Invest Education</span> o'quv markazi haqida</h3>
+					<p>Bizning markaz barcha fanlardan eng samarali darslar va uzoq tajribaga ega ustozlar tomonidan
+						olib boriladi. </p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Bo'limlar</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="/kurs">Kurslar</a></li>
+						<li><a href="/yangilik">Yangiliklar</a></li>
+						<li><a href="/contact">bog'lanish</a></li>
+						<li><a href="/ustoz">O'qituvchilar</a></li>
+
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Ijtimoiy taqmoqlarimiz</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="/"><i class="fa fa-globe" aria-hidden="true"></i> Web sayt</a></li>
+						<li><a href="https://t.me/Investedu_ec"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a></li>
+						<li><a href="https://www.instagram.com/accounts/login/?next=/investedu_ec/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+						<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2	 col-sm-6 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3><i class="fa fa-users" aria-hidden="true"></i> Team programmers</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Javohir - Team Leader</a></li>
+						<li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i> Azizbek - Programmer </a></li>
+						<li><a href="#"><i class="fa fa-code" aria-hidden="true"></i> Ravshan - Coder</a></li>
+						
+					</ul>
+				</div>
+
+				
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2022 yil 15-may</small>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+	</div>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+	<!-- Count Down -->
+	<script src="{% static 'js/simplyCountdown.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+	<script>
+		var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+	</script>
+</body>
+
+</html>

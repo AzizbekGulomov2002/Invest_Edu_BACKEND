@@ -1,0 +1,49 @@
+{% extends 'basic/base.html' %}
+{% load static %}
+{% block content %}
+	<body>
+		
+
+	<div id="fh5co-about">
+		<div class="container">
+			<div class="col-md-6 animate-box">
+				
+				<h2>Invest Education o'quv markazi</h2>
+				<p>O'zbekiston Respublikasi Samarqand viloyatining Samarqand shahrida joylashgan "Invest Education" o'quv markazi 2012-yil 23-aprelda tashkil etilgan. Hozirgi kunda 10,000 dan ortiq abituriyentlar va o'quvchilarni o'qitib kelmoqda. Hozirgacha bo'lgan 10 yil davomida 100,000 mingdan ortiq kadrlar tahsil olishdi. Bu natijalarda albatta kuchli, bilimli va mehnatsevar o'qituvchilar va albatta ilmga chanqoq yoshlarning ham o'rni yuksakdir. </p>
+				
+			</div>
+			<div class="col-md-6">
+				<img style="height: 200px; float:none;" class="img-responsive" src="{% static 'images/Invest.jpg' %}" alt="Free HTML5 Bootstrap Template">
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div id="fh5co-gallery" class="fh5co-bg-section">
+		<div class="row text-center">
+			<h2><span>Tarixiy esdaliklar</span></h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images/tarix invest 2.jpg' %})"></a>
+			</div>
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images esdalik1.jpg' %})"></a>
+			</div>
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images/invest tarix.jpg)' %}"></a>
+			</div>
+			<div class="col-md-3 col-padded">
+				<a href="#" class="gallery" style="background-image: url({% static 'images/Invest.jpg)' %}"></a>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+
+	</body>
+{% endblock %}
