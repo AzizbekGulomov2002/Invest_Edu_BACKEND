@@ -25,4 +25,7 @@ class KursNarxAdmin(admin.ModelAdmin):
     
     
 admin.site.register(Kurs_narxlar, KursNarxAdmin)
-admin.site.register(Yangiliklar)
+
+class YangilikAdmin(admin.ModelAdmin):
+    list_display = ['sarlavha','vaqt','malumot','kurishlar']
+admin.site.register(Yangiliklar, YangilikAdmin)

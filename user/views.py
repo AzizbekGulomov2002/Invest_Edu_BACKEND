@@ -62,35 +62,4 @@ def narx(request):
 
 
 
-# def email(request):
-#     if request.method == "POST":
-#         ism = request.POST.get('ism')
-#         familiya = request.POST.get('familiya')
-#         akkaunt = request.POST.get('akkaunt')
-#         habar = request.POST.get('habar')
-        
-#         data = {
-#             'ism' : ism,
-#             'familiya':familiya,
-#             'akkaunt' : akkaunt,
-#             'habar' : habar
-#         }
-#         habar = '''
-#         Yangi habar : {}
-        
-#         Habar egasi : {}
-#         '''.format(data['habar'], data['akkaunt'])
-#         email(data['habar'], habar, '', ['azizgulomov1529@gmail.com'])
-#     return render(request, 'basic/contact.html', {})
 
-def Send_email(request):
-    name = request.GET.get('name')
-    text = request.GET.get('text')
-    num = request.GET.get('number')
-    email = request.GET.get('email')
-    message = "Salom"
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 535)
-    server.login('yusupovravshan2001@gmail.com', 'ravshanyusupov2001')
-    server.sendmail(email, 'yusupovravshan2001@gmail.com', message)
-    server.quit()
-    return redirect('contact')
