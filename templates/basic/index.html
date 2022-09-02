@@ -162,24 +162,28 @@
                 <h2><span>O'qituvchilarimiz</span></h2>
             </div>
         </div>
-        <div class="row">
-            {% for usta in ustoz %}
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row animate-box">
-                    <div class="owl-carousel owl-carousel-fullwidth">
-                        <div class="item">
-                            <div class="testimony-slide active text-center">
-                                <div class="user" style="background-image: url({{usta.rasm.url}});"></div>
-                                <span>{{usta.ism_sharif}}</span>
-                                <blockquote>
-                                    <p>{{usta.vazifasi}}</p>
-                                </blockquote>
+        <div id="fh5co-staff">
+            <div class="container">
+                <div class="row">				
+                    {% for usta in ustoz %}
+                        <div class="col-md-3 text-center">
+                        <div class="staff">
+                            <div class="staff-img" style="background-image: url({{usta.rasm.url}});border-radius: 50%;">
+                                <ul class="fh5co-social">
+                                    <li><a href="#"><i class="icon-telegram"></i></a></li>
+                                </ul>
                             </div>
+                            <b><span>{{usta.ism_sharif}}</span></b>                            
+                            <b><p>{{usta.vazifasi}}</p></b>
                         </div>
                     </div>
+                    {% endfor %}
+                        
+                    
+                
+                    
                 </div>
             </div>
-            {% endfor %}
         </div>
     </div>
 </div>

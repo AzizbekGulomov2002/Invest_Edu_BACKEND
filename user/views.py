@@ -13,22 +13,26 @@ def index(request):
         'faxr_menu' : Bizning_faxrimiz.objects.all(),
         'ustoz' : Oqituvchilar.objects.all(),
         'yangilik':Yangiliklar.objects.all(),
-        'kurs':Kurs_narxlar.objects.all()
+        'kurs':Kurs_narxlar.objects.all(),
+        
     }
     
     return render(request,'basic/index.html',context) 
     
-    
-
 
 def yangilik(request):
+    yangilikList = Yangiliklar.objects.all()
     context = {
-        'yangilik':Yangiliklar.objects.all(),
+        'yangilik':yangilikList,
+        
+        
     }
-    news=Yangiliklar.objects.get()
-    news.kurishlar=news.kurishlar+1
-    news.save()
+    for item in yangilikList:       
+        item.kurishlar=item.kurishlar+1
+        item.save()
     return render(request,'basic/blog.html',context)
+
+
 
 
 
@@ -59,7 +63,5 @@ def narx(request):
         'kurs':Kurs_narxlar.objects.all()
     }
     return render(request, 'basic/pricing.html', context)
-
-
 
 

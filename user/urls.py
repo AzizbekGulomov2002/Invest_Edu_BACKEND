@@ -10,7 +10,7 @@ urlpatterns = [
     path('yangilik', yangilik, name='yangilik'),
     path('kurs', kurs, name='kurs'),
     path('narx', narx, name='narx'),
-    path('<int:id>',yangilik),
+  
    
    
     

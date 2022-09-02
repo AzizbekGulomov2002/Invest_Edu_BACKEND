@@ -2,7 +2,7 @@ from distutils.command.upload import upload
 from email.policy import default
 from tabnanny import verbose
 from django.db import models
-from sqlalchemy import null
+
 
 
 class Menyu_Fanlar(models.Model):
